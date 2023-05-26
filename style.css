@@ -1,7 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
 body {
     background: #F3F5FC;
+}
+
+.area-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 35px;
 }
 
 /*Area de Ingresado de Texto*/
@@ -9,20 +20,20 @@ body {
 .input-section {
     width: 50%;
     height: 80%;
-    margin: 30px 15px 30px 200px;
+    margin: 5% 0 0 15%;
     display: inline-block;
 }
 
 .input-textarea {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 28px;
     background: #F3F5FC;
     color: darkblue;
     width: 100%;
-    display: block;
     border: none;
     resize: none;
+    display: block;
 }
 
 .input-textarea::placeholder {
@@ -36,19 +47,62 @@ body {
 /*Area de Salida de Texto*/
 
 .output-section {
-    width: 30%;
-    height: 90%;
-    display: inline-block;
+    background: white;
+    width: 25%;
+    height: 100%;
+    border-radius: 20px;
+    justify-content: center;
+    float: right;
+}
+
+.output-info {
+    margin-top: 25%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.output-image-resize {
+    width: 85%;
+    margin: 7.5%;
+    display: block;
+}
+
+.output-info-warning {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin: 7.5%;
+    display: block;
+}
+
+.output-info-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin: 7.5%;
+    display: block;
+}
+
+.output-message {
+    display: none;
 }
 
 .output-textarea {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    background: white;
+    background: blue;
     color: gray;
-    width: 100%;
+    width: 85%;
+    height: 70%;
+    padding: 0;
     border: none;
+    margin: 7.5%;
     resize: none;
 }
 
