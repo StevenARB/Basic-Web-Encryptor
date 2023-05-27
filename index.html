@@ -9,28 +9,36 @@
     </head>
     <body>
         <header>
-
+            <img class="logo" src="images/logo.png" alt="Logo de Alura">
         </header>
         <main>
             <div class="area-container">
                 <section class="input-section">
-                    <form>
-                        <textarea class="input-textarea" id="" cols="30" rows="15" placeholder="Ingrese el texto aqui"></textarea>
-                        <input type="button" value="Encriptar" onclick="showOutput()">
-                        <input type="submit" value="Desencriptar">
-                    </form>
+                    <div>
+                        <textarea class="input-textarea" id="inputText" cols="30" rows="13" placeholder="Ingrese el texto aqui"></textarea>
+                        <div class="input-warning">
+                            <img class="input-warning-image" src="images/input-warning.png" alt="Imagen de Exclamación">
+                            <span class="input-warning-text">Solo letras minúsculas y sin acentos</span>
+                        </div>
+                        <div class="input-buttons">
+                            <input class="input-encriptar" type="button" value="Encriptar" onclick="capturarMensaje()">
+                            <input class="input-desencriptar" type="button" value="Desencriptar">
+                        </div>
+                    </div>
                 </section>
                 <section class="output-section">
                     <div class="output-info" id="outputInfo">
                         <div class="output-image-resize">
-                            <img src="images/Muñeco.png" alt="Imagen de un Muñeco">
+                            <img src="images/muñeco.png" alt="Imagen de un Muñeco">
                         </div>
                         <p class="output-info-warning">Ningún mensaje fue encontrado</p>
                         <p class="output-info-text">Ingresa el texto que desees encriptar o desencriptar</p>
                     </div>
                     <div class="output-message" id="outputMessage">
-                        <textarea class="output-textarea" id="" cols="30" rows="15"></textarea>
-                        <input type="button" value="Copiar">
+                        <textarea class="output-textarea" id="outputText" cols="30" rows="15"></textarea>
+                        <div class="output-button">
+                            <input class="output-copiar" type="button" value="Copiar">
+                        </div>
                     </div>
                 </section>
             </div>

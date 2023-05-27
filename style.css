@@ -9,6 +9,11 @@ body {
     background: #F3F5FC;
 }
 
+.logo {
+    margin: 40px;
+    position: absolute;
+}
+
 .area-container {
     width: 100vw;
     height: 100vh;
@@ -20,7 +25,7 @@ body {
 .input-section {
     width: 50%;
     height: 80%;
-    margin: 5% 0 0 15%;
+    margin: 80px 0 0 220px;
     display: inline-block;
 }
 
@@ -44,6 +49,70 @@ body {
     outline: none;
 }
 
+.input-warning {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.input-warning-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.input-buttons {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.input-encriptar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background: darkblue;
+    color: white;
+    width: 45%;
+    padding: 15px;
+    border-style: solid;
+    border-color: darkblue;
+    border-width: 2px;
+    border-radius: 20px;
+    margin: 0 15px;
+    transition: 500ms;
+}
+
+.input-encriptar:hover {
+    cursor: pointer;
+    background: #0000AA;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+.input-desencriptar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background: #F3F5FC;
+    color: darkblue;
+    width: 45%;
+    padding: 15px;
+    border-style: solid;
+    border-color: darkblue;
+    border-width: 2px;
+    border-radius: 20px;
+    margin: 0 15px;
+    transition: 500ms;
+}
+
+.input-desencriptar:hover {
+    cursor: pointer;
+    background: white;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
 /*Area de Salida de Texto*/
 
 .output-section {
@@ -51,6 +120,7 @@ body {
     width: 25%;
     height: 100%;
     border-radius: 20px;
+    box-shadow: 1px 1px 10px lightgray;
     justify-content: center;
     float: right;
 }
@@ -89,6 +159,7 @@ img {
 }
 
 .output-message {
+    height: 100%;
     display: none;
 }
 
@@ -96,16 +167,44 @@ img {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    background: blue;
+    background: white;
     color: gray;
     width: 85%;
-    height: 70%;
+    height: 77.5%;
     padding: 0;
     border: none;
-    margin: 7.5%;
+    margin: 7.5% 7.5% 0 7.5%;
     resize: none;
 }
 
 .output-textarea:focus {
     outline: none;
+}
+
+.output-button {
+    text-align: center;
+    display: flex;
+}
+
+.output-copiar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background: #F3F5FC;
+    color: darkblue;
+    width: 100%;
+    padding: 5%;
+    border-style: solid;
+    border-color: darkblue;
+    border-width: 2px;
+    border-radius: 20px;
+    margin: 7.5% 7.5% 7.5% 7.5%;
+    transition: 500ms;
+}
+
+.output-copiar:hover {
+    cursor: pointer;
+    background: white;
+    border-radius: 10px;
+    transition: 500ms;
 }
