@@ -18,11 +18,11 @@
                         <textarea class="input-textarea" id="inputText" cols="30" rows="13" placeholder="Ingrese el texto aqui"></textarea>
                         <div class="input-warning">
                             <img class="input-warning-image" src="images/input-warning.png" alt="Imagen de Exclamación">
-                            <span class="input-warning-text">Solo letras minúsculas y sin acentos</span>
+                            <span class="input-warning-text" id="inputWarning">Solo letras minúsculas y sin acentos</span>
                         </div>
                         <div class="input-buttons">
-                            <input class="input-encriptar" type="button" value="Encriptar" onclick="capturarMensaje()">
-                            <input class="input-desencriptar" type="button" value="Desencriptar">
+                            <input class="input-encriptar" type="button" value="Encriptar" onclick="encrypt()">
+                            <input class="input-desencriptar" type="button" value="Desencriptar" onclick="decrypt()">
                         </div>
                     </div>
                 </section>
@@ -37,7 +37,7 @@
                     <div class="output-message" id="outputMessage">
                         <textarea class="output-textarea" id="outputText" cols="30" rows="15"></textarea>
                         <div class="output-button">
-                            <input class="output-copiar" type="button" value="Copiar">
+                            <input class="output-copiar" type="button" value="Copiar" onclick="copyText()">
                         </div>
                     </div>
                 </section>
