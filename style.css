@@ -9,6 +9,10 @@ body {
     background: #F3F5FC;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .logo {
     margin: 40px;
     position: absolute;
@@ -207,4 +211,63 @@ img {
     background: white;
     border-radius: 10px;
     transition: 500ms;
+}
+
+/*Links de Contacto*/
+
+footer {
+    background: #000055;
+    color: white;
+}
+
+.footer-container {
+    padding: 50px;
+    display: flex;
+}
+
+.creator {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.creator h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.creator p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.contact {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.contact h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;    
+}
+
+.contact-icons {
+    font-size: 36px;
+    margin-top: 25px;
+}
+
+.contact-icons a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#linkedin-icon {
+    margin-left: 30px;
 }
