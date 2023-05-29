@@ -19,8 +19,7 @@ body::-webkit-scrollbar {
 }
 
 .area-container {
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
     padding: 35px;
 }
 
@@ -69,6 +68,7 @@ body::-webkit-scrollbar {
 .input-buttons {
     text-align: center;
     margin-top: 25px;
+    display: flex;
 }
 
 .input-encriptar {
@@ -77,13 +77,13 @@ body::-webkit-scrollbar {
     font-size: 18px;
     background: darkblue;
     color: white;
-    width: 45%;
+    width: 300px;
     padding: 15px;
     border-style: solid;
     border-color: darkblue;
     border-width: 2px;
     border-radius: 20px;
-    margin: 0 15px;
+    margin: 15px 15px;
     transition: 500ms;
 }
 
@@ -100,13 +100,13 @@ body::-webkit-scrollbar {
     font-size: 18px;
     background: #F3F5FC;
     color: darkblue;
-    width: 45%;
+    width: 300px;
     padding: 15px;
     border-style: solid;
     border-color: darkblue;
     border-width: 2px;
     border-radius: 20px;
-    margin: 0 15px;
+    margin: 15px 15px;
     transition: 500ms;
 }
 
@@ -122,7 +122,7 @@ body::-webkit-scrollbar {
 .output-section {
     background: white;
     width: 25%;
-    height: 100%;
+    height: 650px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px lightgray;
     justify-content: center;
@@ -270,4 +270,60 @@ footer {
 
 #linkedin-icon {
     margin-left: 30px;
+}
+
+
+@media screen and (max-width:1000px) {
+
+    .logo {
+        margin: 40px;
+        position: static;
+        display: block;
+    }
+
+    .input-section {
+        width: 100%;
+        height: 80%;
+        margin: 0;
+        display: inline-block;
+    }
+    
+    .input-textarea {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+        background: #F3F5FC;
+        color: darkblue;
+        width: 100%;
+        border: none;
+        resize: none;
+        display: block;
+    }
+
+    .input-buttons {
+        text-align: center;
+        margin-top: 25px;
+        display: block  ;
+    }
+
+    .output-info-warning {
+        padding: 7.5%;
+        margin: 0;
+    }
+
+    .output-info-text {
+        padding-bottom: 7.5%;
+        margin: 0;
+    }
+
+    .output-section {
+        float: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .output-image-resize {
+        display: none;
+    }
+
 }
